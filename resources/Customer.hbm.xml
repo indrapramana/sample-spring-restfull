@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+	<class name="id.web.service.Customer" table="customer" schema="dbo" catalog="test">
+		<id name="custId" type="int">
+			<column name="CUST_ID" ></column>
+		</id>
+		<property name="fullName" type="string">
+			<column name="FULL_NAME" length="50" not-null="true" unique="false" />
+		</property>
+		<property name="address" type="string">
+			<column name="ADDRESS" length="50" not-null="true" unique="false" />
+		</property>
+		<property name="email" type="string">
+			<column name="EMAIL" length="50" not-null="true" unique="false" />
+		</property>
+	</class>
+</hibernate-mapping>
